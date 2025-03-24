@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+/* BANNER */
+
+.banner{
+    padding: 30px;
+    background-image: url(../assets/images/banner.png);
+    height: 35vh;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(70, 70, 70);
+    background-blend-mode: soft-light;   
+}
+.contenido-banner{
+    height: 25vh;
+    gap: 3vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    height: 7rem;
+}
+.slogan{
+    color: #EFEDDC;
+    font-style: italic;
+}
+#formulario{
+    background-color: #030227;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#50F0FA;
+    gap: 1rem;
+    padding: 1rem 0;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.formulario_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+.label-ind{
+    display: block;
+    margin-bottom: 7px;
+}
+.input_ind{
+    background-color: #030227;
+    border: 2px solid #50F0FA;
+    border-radius: 17px;
+    padding: 7px 4px;
+    outline: 0;  
+    font-size: 18px;
+}
+.input_ind:focus{
+    background-color: #50F0FA;
+    color: #030227;
+    font-size: 18px;
+}
+#ini_sesion{
+    content: "";
+    padding: 7px;
+    border:none;
+    width:max-content;
+    border-radius: 17px;
+    color:#030227;
+    background-image: linear-gradient(150deg,#ff4bcdc2 , #39359c,#50F0FA);
+    background-size: 300%;
+    transition: all 0.6s ease;
+    cursor: pointer;
+}
+

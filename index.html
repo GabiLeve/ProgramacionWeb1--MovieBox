@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <!--en las dos siguientes lineas se coloca el icono en la pestaña del navegador-->
+    <script src="https://kit.fontawesome.com/b408879b64.js"></script>
+    <link rel="icon" href="./assets/images/Icono-logo-rectangular.ico">
+    <script type="text/javascript" src="./scripts/index.js"></script>
+</head>
+<body>
+    
+    <main>
+        <section class="banner">
+            <div class="contenido-banner">
+                <img src="./assets/images/isologotipo.png" alt="" class="logo">
+                <h2 class="slogan">Tu sitio de entretenimiento</h2>
+            </div>
+        </section>
+        
+        <section class="container_login">
+            <form action="pages/home.html" id="formulario" method="get">
+                <div class="formulario_login">
+                    <label class="label-ind" for="nombre">Nombre de usuario</label>
+                    <input class="input_ind" type="text" id="nombres" name="nombres" placeholder="Ingrese su usuario" autocomplete="off">
+                </div>
+                
+                <div class="formulario_login">
+                    <label class="label-ind" for="nombre">Contraseña</label class="contraseña_login">
+                    <input class="input_ind" type="password" id="contrasenia" name="contrasenia" placeholder="Ingrese su contraseña" autocomplete="off">
+                </div>
+                   
+                <div class="boton_iniciar_sesion">
+                    <button type="button" id="ini_sesion" class="iniciar_sesion" onclick="iniciar_sesion()"> Iniciar sesión</button>
+                </div>
+                
+                <div class="link_login">
+                    <a href="pages/recuperar_contraseña.html">Recuperar contraseña</a>
+                    <br>
+                    <a href="pages/registrarse.html">Registrarse</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <article class="interaccion">
+        <a href="#" class="contactanos">Contactanos</a>
+        <ul class="redes_sociales">
+            <li class="icono_red"><i class="fa-brands fa-facebook"></i></li>
+            <li class="icono_red"><i class="fa-brands fa-twitter"></i></li>
+            <li class="icono_red"><i class="fa-brands fa-instagram"></i></li>
+            <li class="icono_red"><i class="fa-brands fa-youtube"></i></li>
+        </ul>
+    </article>
+        <p class="copyright">&copy; 2024 CartucheraCode | Todos los derechos reservados</p>
+    </footer> 
+
+</body>
+</html>
