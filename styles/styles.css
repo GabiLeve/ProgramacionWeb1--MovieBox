@@ -2,11 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-
+}
+body{
+    background-color: #030227;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* BANNER */
+/* LOGIN */
 
 .banner{
     padding: 30px;
@@ -71,7 +75,7 @@
 }
 #ini_sesion{
     content: "";
-    padding: 7px;
+    padding: 8px;
     border:none;
     width:max-content;
     border-radius: 17px;
@@ -81,6 +85,11 @@
     transition: all 0.6s ease;
     cursor: pointer;
     margin-bottom: 4px;
+    font-weight: bold;
+}
+#ini_sesion:hover{
+    background-image: linear-gradient(150deg,#ff4bcdc2,#50F0FA, #39359c);
+    background-position: 100%;
 }
 .link_login a{
     display: flex;
@@ -102,23 +111,21 @@ footer{
     background-color: #030227;
     color:#50F0FA;
     width: 100%;
+    margin-top: auto;
 }
+
 .interaccion{
     display: flex;
     direction: row;
     justify-content: center;
     padding-top: 15px;
     padding-bottom: 20px;
-
+    border-top: solid 1px #50F0FA;
 }
 .contactanos{
     color: #50F0FA;
     text-decoration: none;
 }
-.contactanos:hover{
-
-}
-
 .redes_sociales{
     list-style: none;
     display: flex;
@@ -127,13 +134,16 @@ footer{
     
 }
 
-.icono_red{
+.bi{
     margin-left: 10px;
 }
-.icono_red:hover{
+.bi:hover{
     transform: translateY(-10px);
     display: inline-block;
-    transition: 0.5s;
+    transition: 0.8s;
     cursor: pointer;
 } 
+.copyright{
+    font-size: 10px;
+}
 
