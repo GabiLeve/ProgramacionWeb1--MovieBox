@@ -62,6 +62,7 @@
     padding: 7px 4px;
     outline: 0;  
     font-size: 18px;
+    color:#50F0FA;
 }
 .input_ind:focus{
     background-color: #50F0FA;
@@ -79,5 +80,60 @@
     background-size: 300%;
     transition: all 0.6s ease;
     cursor: pointer;
+    margin-bottom: 4px;
 }
+.link_login a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-decoration: none;
+    color: #50F0FA;
+    margin-bottom: 3px;
+}
+.link_login a:hover,
+.contactanos:hover{
+    text-decoration:underline;
+}
+footer{    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px;
+    text-align: center;
+    background-color: #030227;
+    color:#50F0FA;
+    width: 100%;
+}
+.interaccion{
+    display: flex;
+    direction: row;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+
+}
+.contactanos{
+    color: #50F0FA;
+    text-decoration: none;
+}
+.contactanos:hover{
+
+}
+
+.redes_sociales{
+    list-style: none;
+    display: flex;
+    direction: row;
+    margin-left: 20px;
+    
+}
+
+.icono_red{
+    margin-left: 10px;
+}
+.icono_red:hover{
+    transform: translateY(-10px);
+    display: inline-block;
+    transition: 0.5s;
+    cursor: pointer;
+} 
 
