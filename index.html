@@ -21,24 +21,25 @@
         
         <section class="container_login">
             <form action="pages/home.html" id="formulario" method="get">
-                <div class="formulario_login">
-                    <label class="label-ind" for="nombre">Nombre de usuario</label>
-                    <input class="input_ind" type="text" id="nombres" name="nombres" placeholder="Ingrese su usuario" autocomplete="off">
-                </div>
-                
-                <div class="formulario_login">
-                    <label class="label-ind" for="nombre">Contraseña</label class="contraseña_login">
-                    <input class="input_ind" type="password" id="contrasenia" name="contrasenia" placeholder="Ingrese su contraseña" autocomplete="off">
-                </div>
-                   
-                <div class="boton_iniciar_sesion">
-                    <button type="button" id="ini_sesion" class="iniciar_sesion" onclick="iniciar_sesion()"> Iniciar sesión</button>
-                </div>
-                
-                <div class="link_login">
-                    <a href="pages/registrarse.html">Registrarse</a>
-                    <a href="pages/recuperar_contraseña.html">Recuperar contraseña</a>
-                </div>
+                <div class="container-input">
+                    <div class="formulario_login">
+                        <label class="label-ind" for="nombre">Nombre de usuario</label>
+                        <input class="input_ind" type="text" id="nombres" name="nombres" placeholder="Ingrese su usuario" autocomplete="off">
+                    </div>
+                    
+                    <div class="formulario_login">
+                        <label class="label-ind" for="nombre">Contraseña</label class="contraseña_login">
+                        <input class="input_ind" type="password" id="contrasenia" name="contrasenia" placeholder="Ingrese su contraseña" autocomplete="off">
+                    </div>
+                </div>    
+                    <div class="boton_iniciar_sesion">
+                        <button type="button" id="ini_sesion" class="iniciar_sesion" onclick="iniciar_sesion()"> Iniciar sesión</button>
+                    </div>
+                    
+                    <div class="link_login">
+                        <a href="pages/registrarse.html">Registrarse</a>
+                        <a href="pages/recuperar_contraseña.html">Recuperar contraseña</a>
+                    </div>                
             </form>
         </section>
     </main>

@@ -53,8 +53,9 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 40%;
+    width: 100%;
 }
+
 .label-ind{
     display: block;
     margin-bottom: 7px;
@@ -104,6 +105,9 @@ body{
 .contactanos:hover{
     text-decoration:underline;
 }
+.container-login{
+    margin: 0 10px;
+}
 footer{    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 40px;
@@ -146,4 +150,58 @@ footer{
 .copyright{
     font-size: 10px;
 }
+@media screen and (min-width: 481px){
+    .container-input{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+    }
+    footer{
+        margin-top: 10vh;
+    }
+    #formulario { 
+        margin: 3vh 5vh; 
+    }
 
+    #formulario label, input, button, a{
+        padding: 15px 0;
+        font-size: large;
+    }
+}
+@media screen and (min-width: 1024px){
+    .banner{
+        height: 45vh;
+    }
+    .contenido-banner{
+        height: 35vh;
+        gap: 3vh;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    #formulario{
+        
+        gap: 1.5rem;
+    }
+    .conteiner-input{
+        padding: 3px;
+    }
+    .link_login{
+        display: flex;
+        gap: 50px;
+    }
+    .interaccion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
