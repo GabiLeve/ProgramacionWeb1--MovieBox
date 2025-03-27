@@ -105,9 +105,7 @@ body{
 .contactanos:hover{
     text-decoration:underline;
 }
-.container-login{
-    margin: 0 10px;
-}
+
 footer{    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 40px;
@@ -151,28 +149,82 @@ footer{
     font-size: 10px;
 }
 @media screen and (min-width: 481px){
+    .container_login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8vh;
+    }
     .container-input{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 80px;
+        gap: 5%;
     }
-    footer{
-        margin-top: 10vh;
+    .formulario_login{
+        width: 80%;
     }
     #formulario { 
-        margin: 3vh 5vh; 
+        width: 60%;
+        padding: 30px 30px;
+        border-radius: 20px;
     }
 
     #formulario label, input, button, a{
         padding: 15px 0;
         font-size: large;
     }
+    #formulario{
+        position:relative;
+        width: 80%;
+        
+    }
+    
+    #formulario:before,
+    #formulario:after{
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background: linear-gradient(45deg, #50F0FA, #ff4bcdc2,#50F0FA, #ff4bcdc2,#50F0FA, #ff4bcdc2);
+        background-size: 400%;
+        width: calc(100% + 4.5px);
+        height: calc(100% + 4.5px);
+        z-index: -1;
+        animation: animate 20s linear infinite;
+        border-radius: 20px;
+    }
+    #formulario:after{
+        filter: blur(20px);
+    }
+    @keyframes animate{
+        0%{
+            background-position: 0 0;
+        }
+         50%{
+            background-position: 0 0;
+        }
+         100%{
+            background-position: 300% 0;
+        }
+         0%{
+            background-position: 0 0;
+        }
+         0%{
+            background-position: 0 0;
+        }
+    }
+    footer{
+        margin-top: 10vh;
+    }
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1023px){
     .banner{
         height: 45vh;
+    }
+    .logo{
+        height: 12rem;
     }
     .contenido-banner{
         height: 35vh;
@@ -182,8 +234,8 @@ footer{
         align-items: center;
     }
     #formulario{
-        
         gap: 1.5rem;
+        width: 50%;
     }
     .conteiner-input{
         padding: 3px;
