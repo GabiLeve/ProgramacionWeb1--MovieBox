@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recuperación De Contraseña</title>
+        <script src="https://kit.fontawesome.com/b408879b64.js"></script>
+        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="icon" href="../assets/images/Icono-logo-rectangular.ico">
+        
+    </head>
+
+    <body class="recuperar_contraseña">
+
+        <header class="header">
+            <a class="logo_nav" href="../index.html"><img class="logo_nav"
+                    src="../assets/images/logo.png" alt="Logo"></a>
+        </header>
+
+        <main class="recuperar_contraseña">
+            <h2 class="titulo"> RECUPERAR CONTRASEÑA </h2>
+
+            <h3 class="aclaracion">
+                Te enviaremos un e-mail con las instrucciones sobre cómo
+                restablecer
+                tu contraseña
+            </h3>
+
+            <div class="container_rec">
+
+                <form action="../index.html" class="form" id="form_recuperar_contrasenia">
+                    <div class="form_correo">
+                        <label class="E-mail referencia_inputField">E-mail</label>
+                        <input type="email" placeholder="ingrese su correo"
+                            class="correo input_field"  id="email_recuperar_contrasenia">
+                    </div>
+
+                    <div class="form_correo">
+                        <label class="Usuario referencia_inputField">Usuario</label>
+                        <input type="text" placeholder="ingrese su usuario"
+                            class="correo input_field" id="usuario_recuperar_contrasenia">
+
+                    </div>
+
+                    <div class="boton">
+
+                          <button disabled class="boton_recu_contraseña botonDeshabilitado" id="enviar_recuperar_contrasenia" > Enviar email</button>
+                        <button class="boton_recu_contraseña"> Cancelar</button>
+                    </div>
+                </form>
+                </div>
+            </main>
+            <footer>
+                <article class="interaccion">
+                <a href="#" class="contactanos">Contactanos</a>
+                <ul class="redes_sociales">
+                    <li class="icono_red"><i class="fa-brands fa-facebook"></i></li>
+                    <li class="icono_red"><i class="fa-brands fa-twitter"></i></li>
+                    <li class="icono_red"><i class="fa-brands fa-instagram"></i></li>
+                    <li class="icono_red"><i class="fa-brands fa-youtube"></i></li>
+                </ul>
+            </article>
+                <p class="copyright">&copy; 2024 CartucheraCode | Todos los derechos reservados</p>
+            </footer> 
+            <script src="../scripts/recuperar_contraseña.js"></script>
+        </body>
+        
+    </html>

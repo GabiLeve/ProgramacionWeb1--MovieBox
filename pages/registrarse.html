@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuario</title>
+    <script src="https://kit.fontawesome.com/b408879b64.js"></script>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="icon" href="../assets/images/Icono-logo-rectangular.ico">
+    
+  </head>
+
+  <body class="registro_usuario">
+
+    <header class="header">
+      <a class="logo_nav" href="../index.html"><img class="logo_nav"
+          src="../assets/images/logo.png" alt="Logo"></a>
+    </header>
+
+    <main class="main_recuperar">
+
+      <div class="container_registro">
+        <div id="contenedor_registro">
+          <h2 class="registro_titulo"> Registro</h2>
+
+          <form action="../index.html" class="form_registro" id="formulario">
+
+            <div class="registro">
+              <label class="nombre referencia_inputField">Nombre:</label>
+              <input type="text" placeholder="Ingrese su nombre" class="form_registro input_field" id="nombre">
+            </div>
+
+            <div class="registro">
+              <label class="apellido referencia_inputField">Apellido</label>
+              <input type="text" placeholder="Ingrese su apellido" class="form_registro input_field" id="apellido">
+            </div>
+
+            <div class="registro">
+              <label class="email referencia_inputField">E-mail</label>
+              <input type="email" placeholder="Ingrese su E-mail" class="form_registro input_field" id="email">
+            </div>
+
+            <div class="registro">
+              <label class="nombreDeUsuario  referencia_inputField">Nombre de usuario:</label>
+              <input type="text" placeholder="Nombre de usuario" class="form_registro input_field" id="nombre_usuario">
+            </div>
+
+            <div class="registro">
+              <label class="Contraseña referencia_inputField">Contraseña:</label>
+              <input type="password" placeholder="contraseña" class="form_registro input_field" id="contrasenia">
+            </div>
+
+            <div class="registro">
+              <label class="repetir_contraseña referencia_inputField"></label>Repetir Contraseña:</label>
+              <input type="password" placeholder="Repetir contraseña" class="form_registro input_field" id="rep_contrasenia">
+            </div>
+          </div>
+
+ 
+
+          <div class="contenedor_mp">
+            <h3 class="metodo_de_pago">
+              Método de pago
+            </h3>
+
+            <div class="tarjeta">
+              <input class="check  referencia_inputField" type="radio" name="medio_pago"
+                value="tarjeta"  id="medio_pago"> Tarjeta de credito
+
+              <input type="text" placeholder="Número de tarjeta"class="numero_tarjeta input_field" id="nro_tarjeta">
+
+            </div>
+            <div class="codigo_tarjeta">
+              <label class="codigo_titulo referencia_inputField">Código de Seguridad</label>
+              <input type="text" placeholder="XXX"
+                class="cvv input_field" id="codigo">
+            </div>
+
+            <div class="cupon">
+              <input class="check referencia_inputField" type="radio" name="medio_pago" value="cupon"
+                 id="cupon">Cupón de pago <br>
+              <input class="facil" type="checkbox" name="facil" value="facil"  id="facil">
+              <label for="facil referencia_inputField">Pago Fácil</label> <br>
+              <input class="rapi" type="checkbox" name="rapi" value="rapi"
+                 id="rapi">
+              <label for="rapi referencia_inputField">RapiPago</label>
+
+            </div>
+
+            <input class="mp" type="radio" name="medio_pago"
+              value="transferencia"  id="tranfe">
+            <label class=" referencia_inputField">Transferencia bancaria CBU 152548964378912354788</label>
+
+          </div>
+
+          <div class="boton_registro">
+            <button disabled id="enviar" onclick="validarFormulario()" class="boton_de_registro botonDeshabilitado" type="button"> Enviar </button>
+            <button id="cancelar" onclick="cancelarRegistro()" class="boton_de_registro" type="button"> Cancelar</button>
+
+           
+          </div>
+        </form>
+      </div>
+
+    </main>
+    <footer>
+      <article class="interaccion">
+      <a href="#" class="contactanos">Contactanos</a>
+      <ul class="redes_sociales">
+          <li class="icono_red"><i class="fa-brands fa-facebook"></i></li>
+          <li class="icono_red"><i class="fa-brands fa-twitter"></i></li>
+          <li class="icono_red"><i class="fa-brands fa-instagram"></i></li>
+          <li class="icono_red"><i class="fa-brands fa-youtube"></i></li>
+      </ul>
+  </article>
+      <p class="copyright">&copy; 2024 CartucheraCode | Todos los derechos reservados</p>
+  </footer> 
+  <script type="text/javascript" src="../scripts/registrarse.js"></script>
+  </body>
+
+</html>
