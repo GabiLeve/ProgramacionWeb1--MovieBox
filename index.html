@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,9 @@
     <link rel="icon" href="./assets/images/Icono-logo-rectangular.ico">
     <script type="text/javascript" src="./scripts/index.js"></script>
 </head>
+
 <body>
-    
+
     <main>
         <section class="banner">
             <div class="contenido-banner">
@@ -18,43 +20,49 @@
                 <h2 class="slogan">Tu sitio de entretenimiento</h2>
             </div>
         </section>
-        
+
         <section class="container-login">
-            <form action="pages/home.html" id="formulario" method="get">
-                <div class="container-input">
-                    <div class="formulario-login">
-                        <label class="label-ind" for="nombre">Nombre de usuario</label>
-                        <input class="input-ind" type="text" id="nombres" name="nombres" placeholder="Ingrese su usuario" autocomplete="off">
+            <div class="login" id="formulario">
+                <form action="pages/home.html" method="get">
+                    <div class="container-input">
+                        <div class="formulario-login">
+                            <label class="label-ind" for="nombre">Nombre de usuario</label>
+                            <input class="input-ind" type="text" id="nombres" name="nombres"
+                                placeholder="Ingrese su usuario" autocomplete="off">
+                        </div>
+
+                        <div class="formulario-login">
+                            <label class="label-ind" for="nombre">Contraseña</label class="contraseña_login">
+                            <input class="input-ind" type="password" id="contrasenia" name="contrasenia"
+                                placeholder="Ingrese su contraseña" autocomplete="off">
+                        </div>
                     </div>
-                    
-                    <div class="formulario-login">
-                        <label class="label-ind" for="nombre">Contraseña</label class="contraseña_login">
-                        <input class="input-ind" type="password" id="contrasenia" name="contrasenia" placeholder="Ingrese su contraseña" autocomplete="off">
+                    <div class="btn-ini-sesion">
+                        <button type="button" id="ini-sesion" class="iniciar-sesion" onclick="iniciar_sesion()"> Iniciar
+                            sesión</button>
                     </div>
-                </div>    
-                    <div class="boton_iniciar_sesion">
-                        <button type="button" id="ini-sesion" class="iniciar-sesion" onclick="iniciar_sesion()"> Iniciar sesión</button>
-                    </div>
-                    
-                    <div class="link-login">
-                        <a href="pages/registrarse.html">Registrarse</a>
-                        <a href="pages/recuperar_contrasenia.html">Recuperar contraseña</a>
-                    </div>                
-            </form>
+                </form>
+                <div class="link-login">
+                    <a href="pages/registrarse.html">Registrarse</a>
+                    <a href="pages/recuperar_contrasenia.html">Recuperar contraseña</a>
+                </div>
+
+            </div>
         </section>
     </main>
 
     <footer class="footer">
         <article class="interaccion">
-        <a href="#" class="contactanos">Contactanos</a>
-        <ul class="redes-sociales">
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-twitter"></i>
-            <i class="bi bi-instagram"></i>
-        </ul>
-    </article>
+            <a href="#" class="contactanos">Contactanos</a>
+            <ul class="redes-sociales">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-instagram"></i>
+            </ul>
+        </article>
         <p class="copyright">&copy; 2024 CartucheraCode | Todos los derechos reservados</p>
-    </footer> 
+    </footer>
 
 </body>
+
 </html>

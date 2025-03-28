@@ -49,6 +49,7 @@ body{
     font-size: 18px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .formulario-login{
     display: flex;
     flex-direction: column;
@@ -90,6 +91,11 @@ body{
 #ini-sesion:hover{
     background-image: linear-gradient(150deg,#ff4bcdc2,#50F0FA, #39359c);
     background-position: 100%;
+}
+.btn-ini-sesion{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
 }
 .link-login a{
     display: flex;
