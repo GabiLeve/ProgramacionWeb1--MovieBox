@@ -264,7 +264,7 @@ footer{
     }
 }
 
-/* REGISTRARSE */
+/* REGISTRARSE - CREAR UNA CUENTA*/
 
 .header-reg{
     height: 4vh;
@@ -273,9 +273,27 @@ footer{
 .logo-nav{
     height: 100%;
 }
+.titulo-reg{
+    display: flex;
+    flex-direction: column;
+    color: #ff4bcdc2;
+    align-items: center;
+    margin: .5rem;
+    margin-bottom: 1rem;
+}
+.form-registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-mp{
+
+}
 .form-registro label{
     display: block;
-    margin-bottom: 7px;
+    margin: 0 0 .3rem .3rem;
+
 }
 .form-registro input{
     background-color: #030227;
@@ -285,13 +303,20 @@ footer{
     outline: 0;  
     font-size: 18px;
     color:#50F0FA;
+    margin-bottom: .7rem;
+
 }
-.input-ind:focus{
+.form-registro input:focus{
     background-color: #50F0FA;
     color: #030227;
     font-size: 18px;
 }
-#ini-sesion{
+.btn-action{
+    display: flex; 
+    gap: 20%;
+    margin-top: 1rem;
+}
+.btn-action button{
     content: "";
     padding: 8px;
     border:none;
@@ -305,8 +330,10 @@ footer{
     margin-bottom: 4px;
     font-weight: bold;
 }
-#ini-sesion:hover{
+.btn-action button:hover{
     background-image: linear-gradient(150deg,#ff4bcdc2,#50F0FA, #39359c);
     background-position: 100%;
 }
+
+
 
