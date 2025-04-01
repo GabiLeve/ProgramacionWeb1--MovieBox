@@ -334,6 +334,12 @@ footer{
     background-image: linear-gradient(150deg,#ff4bcdc2,#50F0FA, #39359c);
     background-position: 100%;
 }
+.contenedor-mp{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 
