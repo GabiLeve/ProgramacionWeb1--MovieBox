@@ -269,14 +269,14 @@ footer{
 
 /* REGISTRARSE - CREAR UNA CUENTA*/
 
-.header-reg{
+.header-reg{/*apli*/
     height: 4vh;
     margin:  2vh 1.5vh;
 }
-.logo-nav{
+.logo-nav{/*apli*/
     height: 100%;
 }
-.titulo-reg{
+#contenedor_registro{/*apli*/
     display: flex;
     flex-direction: column;
     color: #ff4bcdc2;
@@ -284,18 +284,18 @@ footer{
     margin: .5rem;
     margin-bottom: 1rem;
 }
-.form-registro {
+.form_registro {/*apli*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.form-registro label{
+.form_registro label{/*apli*/
     display: block;
     margin: 0 0 .3rem .3rem;
 
 }
-.form-registro input{
+.form_registro input{/*apli*/
     background-color: #030227;
     border: 2px solid #50F0FA;
     border-radius: 17px;
@@ -306,17 +306,17 @@ footer{
     margin-bottom: .7rem;
 
 }
-.form-registro input:focus{
+.form_registro input:focus{/*apli*/
     background-color: #50F0FA;
     color: #030227;
     font-size: 18px;
 }
-.btn-action{
+.boton_registro{/*apli*/
     display: flex; 
     gap: 20%;
     margin-top: 1rem;
 }
-.btn-action button{
+.boton_registro button{/*apli*/
     content: "";
     padding: 8px;
     border:none;
@@ -330,16 +330,16 @@ footer{
     margin-bottom: 4px;
     font-weight: bold;
 }
-.btn-action button:hover{
+.boton_registro button:hover{/*apli*/
     background-image: linear-gradient(150deg,#ff4bcdc2,#50F0FA, #39359c);
     background-position: 100%;
 }
-.contenedor-mp{
+.contenedor_mp{/*apli*/
     width: 60%;
     display: flex;
     flex-direction: column; 
 }
-.metodo-de-pago{
+.metodo_de_pago{/*apli*/
     margin-bottom: 1rem;
 }
 .checks{
@@ -351,7 +351,13 @@ footer{
     display: flex;
     flex-direction: row;
 }
-
+.botonDeshabilitado:disabled {
+    background-image: none; /* Remove gradient */
+    background-color: #cccccc; /* Background color for disabled state */
+    color: #666666; /* Text color for disabled state */
+    cursor: not-allowed; /* Indicate that the button is disabled */
+    border: 1px solid #999999; /* Border for disabled state */
+}
 
 
 
