@@ -39,17 +39,17 @@ body{
     font-style: italic;
 }
 #formulario{
-    background-color: #030227;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    background-color: #030227;
     color:#50F0FA;
-    gap: 1rem;
-    padding: 1rem 0;
+    flex-direction: column;
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem 0;
+    }
 
 .formulario-login{
     display: flex;
@@ -138,21 +138,20 @@ footer{
 }
 .redes-sociales,
 .redes_sociales{
-    list-style: none;
     display: flex;
     direction: row;
-    margin-left: 20px;
-    
+    margin-left: 20px; 
+    list-style: none;
 }
 
 .bi{
     margin-left: 10px;
 }
 .bi:hover{
-    transform: translateY(-10px);
     display: inline-block;
-    transition: 0.8s;
     cursor: pointer;
+    transform: translateY(-10px);
+    transition: 0.8s;
 } 
 .copyright{
     font-size: 10px;
@@ -296,7 +295,9 @@ footer{
     margin: 0 0 .3rem .3rem;
 
 }
-.form_registro input{
+.form_registro input[type="text"], 
+input[type="email"],
+input[type="password"] {
     background-color: #030227;
     border: 2px solid #50F0FA;
     border-radius: 17px;
@@ -307,7 +308,9 @@ footer{
     margin-bottom: .7rem;
 
 }
-.form_registro input:focus{
+.form_registro input[type="text"], 
+input[type="email"],
+input[type="password"]{
     background-color: #50F0FA;
     color: #030227;
     font-size: 18px;
@@ -339,7 +342,8 @@ footer{
 .contenedor_mp{
     display: flex;
     flex-direction: column; 
-    width: 60%;
+    align-items: center;
+    max-width: 231px;
 }
 .metodo_de_pago{
     margin-bottom: 1rem;
@@ -353,14 +357,43 @@ footer{
     display: flex;
     flex-direction: row;
 }
+.contenedor_mp input[type="radio"]{
+    appearance: none;
+}
+.contenedor_mp input[type="radio"]:before{
+    border: 3px solid #ff4bcdc2;
+    border-radius: 50%;
+    color: transparent;
+    content: "";
+    cursor: pointer;
+    display: inline-flex;
+    height: 12px;
+    line-height: 12px;
+    margin: 8px;
+    text-align: center;
+    width: 12px;
+
+}
+.contenedor_mp input[type="radio"]:checked{
+    background-image: radial-gradient(#ff4bcdc2 0%, #ff4bcdc2 40%, transparent 50%, transparent );
+    color: #ff4bcdc2;
+    
+}
 .botonDeshabilitado:disabled {
     background-image: none; 
     background-color: #cccccc;
     border: 1px solid #999999;  
     color: #666666; 
-    cursor: not-allowed; 
-    
+    cursor: not-allowed;   
 }
+.botonDeshabilitado:disabled:hover {
+    background-image: none; 
+    background-color: #cccccc;
+    border: 1px solid #999999;  
+    color: #666666; 
+    cursor: not-allowed;   
+}
+
 
 
 
