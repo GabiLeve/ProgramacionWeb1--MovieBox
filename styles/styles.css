@@ -337,9 +337,23 @@ footer{
 .contenedor-mp{
     width: 60%;
     display: flex;
+    flex-direction: column; 
+}
+.metodo-de-pago{
+    margin-bottom: 1rem;
+}
+.checks{
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
+.check1{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
 
 
 

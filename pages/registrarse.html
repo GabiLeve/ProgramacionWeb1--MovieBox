@@ -65,8 +65,7 @@
           <div class="tarjeta">
             <div class="nro-tarjeta">
               <input class="check  referencia-inputField" type="radio" name="medio-pago" value="tarjeta"
-                id="medio-pago">
-              Tarjeta de credito
+                id="medio-pago">Tarjeta de credito
               <input type="text" placeholder="Número de tarjeta" class="numero-tarjeta input-field referencia-inputField" id="nro-tarjeta">
             </div>
 
@@ -74,20 +73,30 @@
               <label class="codigo-titulo referencia-inputField">Código de Seguridad</label>
               <input type="text" placeholder="XXX" class="cvv input-field" id="codigo">
             </div>
+
           </div>
 
           <div class="cupon">
-            <input class="check referencia-inputField" type="radio" name="medio_pago" value="cupon" id="cupon">Cupón de
+            <input class="check check-cupon referencia-inputField" type="radio" name="medio_pago" value="cupon" id="cupon">Cupón de
             pago
+            <div class="checks">
+              <div class="check1">
             <input class="facil" type="checkbox" name="facil" value="facil" id="facil">
             <label for="facil referencia_inputField">Pago Fácil</label>
+          </div>
+            <div class="check1">
             <input class="rapi" type="checkbox" name="rapi" value="rapi" id="rapi">
             <label for="rapi referencia_inputField">RapiPago</label>
           </div>
+          </div>
+          </div>
 
           <div class="trans">
-            <input class="mp" type="radio" name="medio-pago" value="transferencia" id="tranfe">
-            <label class=" referencia-inputField">Transferencia bancaria CBU 152548964378912354788</label>
+            <div class="trans-btn">
+            <input class="mp" type="radio" name="medio-pago" value="transferencia" id="tranfe">Transferencia bancaria
+            
+          </div>
+            <label class=" referencia-inputField">CBU: 152548964378912354788</label>
           </div>
         </div>
 
