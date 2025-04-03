@@ -407,6 +407,9 @@ input:checked[type="checkbox"]:before{
     transform: rotate(45deg) translate(5px, -10px);
     width: 10px; 
 }
+input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px #50F0FA inset !important;
+}
 .botonDeshabilitado:disabled,
 .botonDeshabilitado:disabled:hover {
     background-image: none; 
