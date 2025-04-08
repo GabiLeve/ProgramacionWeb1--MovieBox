@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Recuperación De Contraseña</title>
-        <script src="https://kit.fontawesome.com/b408879b64.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="../styles/styles.css">
         <link rel="icon" href="../assets/images/Icono-logo-rectangular.ico">
         
@@ -19,7 +19,7 @@
         </header>
 
         <main class="recuperar_contraseña">
-            <h2 class="titulo"> RECUPERAR CONTRASEÑA </h2>
+            <h1 class="titulo"> Recuperar contraseña </h1>
 
             <h3 class="aclaracion">
                 Te enviaremos un e-mail con las instrucciones sobre cómo
@@ -32,8 +32,8 @@
                 <form action="../index.html" class="form" id="form_recuperar_contrasenia">
                     <div class="form_correo">
                         <label class="E-mail referencia_inputField">E-mail</label>
-                        <input type="email" placeholder="ingrese su correo"
-                            class="correo input_field"  id="email_recuperar_contrasenia">
+                        <input type="text" placeholder="ingrese su correo"
+                            class="correo input_field"  id="email_recuperar_contrasenia" >
                     </div>
 
                     <div class="form_correo">
@@ -45,7 +45,7 @@
 
                     <div class="boton">
 
-                          <button disabled class="boton_recu_contraseña botonDeshabilitado" id="enviar_recuperar_contrasenia" > Enviar email</button>
+                          <button disabled class="boton_recu_contraseña botonDeshabilitado" id="enviar_recuperar_contrasenia" > Enviar e-mail</button>
                         <button class="boton_recu_contraseña"> Cancelar</button>
                     </div>
                 </form>
@@ -55,15 +55,14 @@
                 <article class="interaccion">
                 <a href="#" class="contactanos">Contactanos</a>
                 <ul class="redes_sociales">
-                    <li class="icono_red"><i class="fa-brands fa-facebook"></i></li>
-                    <li class="icono_red"><i class="fa-brands fa-twitter"></i></li>
-                    <li class="icono_red"><i class="fa-brands fa-instagram"></i></li>
-                    <li class="icono_red"><i class="fa-brands fa-youtube"></i></li>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-instagram"></i>
                 </ul>
             </article>
                 <p class="copyright">&copy; 2024 CartucheraCode | Todos los derechos reservados</p>
             </footer> 
-            <script src="../scripts/recuperar_contraseña.js"></script>
+            <script src="../scripts/recuperar_contrasenia.js"></script>
         </body>
         
     </html>

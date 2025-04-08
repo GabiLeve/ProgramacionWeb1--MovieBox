@@ -1,5 +1,4 @@
-/* boton deshabilitado*/ 
-document.addEventListener('DOMContentLoaded', function () {
+ document.addEventListener('DOMContentLoaded', function () {
     const enviarBtn = document.getElementById('enviar_recuperar_contrasenia');
     const inputs = document.querySelectorAll('.input_field');
 
@@ -19,54 +18,38 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("form_recuperar_contrasenia");
+    const emailInput = document.getElementById("email_recuperar_contrasenia");
+    const userInput = document.getElementById("usuario_recuperar_contrasenia");
+    const enviarBtn = document.getElementById("enviar_recuperar_contrasenia");
+   
+  
+    form.addEventListener("submit", (e) => {
+      e.preventDefault(); 
+  
+      const email = emailInput.value.trim();
+      const user = userInput.value.trim();
+      const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      const passValida = user.length >= 6;
+  
+      let errores = [];  
 
-const form_recuperarContrasenia = document.getElementById('form_recuperar_contrasenia');
-const botonesForm = document.getElementsByClassName("boton_recu_contraseña");
-
-for(let boton of botonesForm){
-    let botonEnviar = null;
-    let botonCancelar = null;
-
-    if(boton.innerHTML.toLowerCase().includes("enviar")){
-        botonEnviar = boton;
-        botonEnviar.addEventListener("click", function(){
-            recuperar_contrasenia();
-        })
+      if (!emailValido) {
+        errores.push("El e-mail no es válido"); 
+      }
+  
+      if (!passValida) {
+        errores.push("La contraseña debe tener mínimo 6 dígitos");
+      }
+      if (errores.length > 0) {
+        alert(errores.join("\n")); 
+      }
+      if (errores.length == 0){
+      alert("Verifique su bandeja de entrada para recuperar la contraseña");
+      window.location.href = "../index.html";
     }
-
-    if(boton.innerHTML.toLowerCase().includes("cancelar")){
-        botonCancelar = boton;
-        botonCancelar.addEventListener("click", function(){
-            form_recuperarContrasenia.submit();
-
-        })
-    }
-
-
-}
-
-function recuperar_contrasenia() {
-    const email_recuperarContrasenia = document.getElementById('email_recuperar_contrasenia');
-    const usuario_recuperarContrasenia = document.getElementById('usuario_recuperar_contrasenia');
-
-    // Corroboro que el email esté completo
-    if (email_recuperarContrasenia.value.trim() === '') {
-        alert("Complete el e-mail");
-        return;
-    }
-
-    // Corroboro que el usuario esté completo
-    if (usuario_recuperarContrasenia.value.trim() === '') {
-        alert("Complete el usuario");
-        return;
-    }
-
-    // Si ambos campos están completos, se envía el formulario
-    form_recuperarContrasenia.submit();
-}
-
-form_recuperarContrasenia.addEventListener("submit", function(event) {
-    event.preventDefault(); // Previene el envío del formulario
-});
+      });
+  });
 
 
