@@ -38,7 +38,8 @@ body{
     color: #EFEDDC;
     font-style: italic;
 }
-#formulario{
+#formulario,
+#form_recuperar_contrasenia{
     display: flex;
     align-items: center;
     background-color: #030227;
@@ -273,7 +274,8 @@ footer{
 
 /* REGISTRARSE - CREAR UNA CUENTA*/
 
-.header-reg{
+.header-reg,
+.header_recu{
     height: 4vh;
     margin:  2vh 1.5vh;
 }
@@ -288,18 +290,23 @@ footer{
     margin: .5rem;
     margin-bottom: 1rem;
 }
-.form_registro {
+.form_registro,
+.form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.form_registro label{
+.form_registro label,
+.form label{
     display: block;
     margin: 0 0 .3rem .3rem;
 
 }
 .form_registro input[type="text"], 
+input[type="email"],
+input[type="password"],
+.form input[type="text"], 
 input[type="email"],
 input[type="password"] {
     background-color: #030227;
@@ -313,6 +320,9 @@ input[type="password"] {
 
 }
 .form_registro input[type="text"], 
+input[type="email"],
+input[type="password"],
+.form input[type="text"], 
 input[type="email"],
 input[type="password"]{
     background-color: #50F0FA;
