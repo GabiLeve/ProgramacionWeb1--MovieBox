@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Pantalla principal</title>
+    <script src="https://kit.fontawesome.com/b408879b64.js"></script>
+    <link rel="icon" href="../assets/images/Icono-logo-rectangular.ico">
+    
+</head>
+
+<body>
+    <header class="header">
+        <a class="logo_nav" href="home.html"><img class="logo_nav" src="../assets/images/logo.png" alt="Logo"></a>
+
+        <nav class="navbar">
+            <a href="#" id="home">Home</a>
+            <a href="#" id="serie">Series</a>
+            <a href="#" id="pelicula">Peliculas</a>
+            <a href="perfil_usuario.html">Perfil</a>
+            <a href="../index.html">
+                <button id="cerrarSesionBtn" class="boton_cerrar_sesion"><i class="fa-solid fa-right-from-bracket"></i></button>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="buscadores">
+
+            <div class="filtro">
+                <label for="categorías" class="categorias">Categorías</label>
+
+                <select class="selector" name="categorías" id="categorias">
+
+                    <option value="0" selected>Seleccione una opción</option>
+                    <option value="1">Acción</option>
+                    <option value="2">Drama</option>
+                    <option value="3">Ciencia ficción</option>
+                    <option value="4">Fantasía</option>
+                    <option value="5">Musicales</option>
+            </div>
+            <div class="buscar">
+                <input class="input" placeholder="Buscar por nombre"> 
+                <button class="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </section>
+
+        <section id="contenidos">
+            <article>
+                <h2 class="subtitulo_ppal">Películas y Series</h2>
+            </article>
+
+            <div class="cards"></div>
+        </section>
+
+    </main>
+    <footer>
+        <article class="interaccion">
+        <a href="#" class="contactanos">Contactanos</a>
+        <ul class="redes_sociales">
+            <li class="icono_red"><i class="fa-brands fa-facebook"></i></li>
+            <li class="icono_red"><i class="fa-brands fa-twitter"></i></li>
+            <li class="icono_red"><i class="fa-brands fa-instagram"></i></li>
+            <li class="icono_red"><i class="fa-brands fa-youtube"></i></li>
+        </ul>
+    </article>
+        <p class="copyright">&copy; 2024 CartucheraCode | Todos los derechos reservados</p>
+    </footer> 
+    <script src="../scripts/home.js"></script>
+</body>
+
+</html>
