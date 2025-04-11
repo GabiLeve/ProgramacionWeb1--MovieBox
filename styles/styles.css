@@ -504,6 +504,12 @@ input:-webkit-autofill {
     .aclaracion{
         margin: 2rem 1rem 4rem 1rem ;
     }
+    .boton button{
+        width: fit-content;
+    }
+    #enviar_recuperar_contrasenia{
+        width: 5.5rem;
+    }
 }
 
 
