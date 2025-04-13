@@ -279,7 +279,7 @@ footer{
 .header-reg,
 .header_recu{
     height: 4vh;
-    margin:  2vh 1.5vh;
+    margin:  3vh 2.5vh;
 }
 .logo-nav{
     height: 100%;
@@ -511,6 +511,35 @@ input:-webkit-autofill {
         width: 5.5rem;
     }
 }
+/* HOME */
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar-list{
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+}
+.navbar-list li a{
+    color:#50F0FA;
+    font-size: 18px;
+    text-decoration: none;   
+}
+.navbar-list li a{
+    height: 2px;
+    color: #50F0FA;   
+}
+.boton_cerrar_sesion{
+    color: #50F0FA;
+    background-color: #030227;
+    border: 0;
+    cursor: pointer;
+    }
 
 
 
