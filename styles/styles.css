@@ -59,8 +59,7 @@ body{
     justify-content: center;
     width: 100%;
 }
-.label-ind,
-.filtro label{
+.label-ind{
     display: block;
     margin: 0 0 .3rem .3rem;
 }
@@ -599,6 +598,10 @@ input:-webkit-autofill {
     }
     
 }
+.filtro label{
+    display: block;
+    margin: 0 0 .3rem .3rem;
+}
 .filtro select{
     background-color: #030227;
     border: 2px solid #50F0FA;
@@ -612,33 +615,24 @@ input:-webkit-autofill {
 .categorias{
     color: #50F0FA;
 }
-
-
-
 .input{
     padding: 4px;
     border-radius: 17px 0 0 17px;
-    
     background-color: #030227;
     border: 2px solid #50F0FA;
     color: black;
 }
-
 .button{
-   background-color: #50F0FA;
-   border: 0;
-   position: absolute;
-   padding: 6px 7px 6px 5px;
-   border-radius: 0 17px 17px 0;
-   cursor: pointer;
-   
+    background-color: #50F0FA;
+    border: 0;
+    border-radius: 0 17px 17px 0;
+    cursor: pointer;
+    padding: 6px 7px 6px 5px;
+    position: absolute;
 }
-
- .subtitulo_ppal{
+.subtitulo_ppal{
     color: #FF4BCD;
-    margin-top: 70px;
-    margin-left: 58px;
- }
+}
 
 
 
