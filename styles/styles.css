@@ -549,7 +549,8 @@ input:-webkit-autofill {
     .abrir-menu,
     .cerrar-menu{
         display: block;
-        border: 0;  
+        border: 0; 
+        cursor: pointer; 
     }
     .abrir-menu{
         background-color: transparent;
@@ -595,9 +596,15 @@ input:-webkit-autofill {
     .cerrar-menu i{
         color: #030227;
         font-size: 1.5rem;
-    }
-    
+    } 
 }
+.buscadores div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .filtro label{
     display: block;
     margin: 0 0 .3rem .3rem;
@@ -615,24 +622,28 @@ input:-webkit-autofill {
 .categorias{
     color: #50F0FA;
 }
-.input{
+
+/*
+.buscar,
+.lupa{
     padding: 4px;
     border-radius: 17px 0 0 17px;
     background-color: #030227;
     border: 2px solid #50F0FA;
     color: black;
 }
-.button{
+.lupa{
     background-color: #50F0FA;
     border: 0;
     border-radius: 0 17px 17px 0;
     cursor: pointer;
     padding: 6px 7px 6px 5px;
     position: absolute;
-}
+}*/
 .subtitulo_ppal{
     color: #FF4BCD;
 }
+
 
 
 
