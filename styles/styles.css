@@ -231,10 +231,6 @@ footer{
         margin-top: 10vh;
     }
 }
-@media screen and (min-width: 769px){
-    
-}
-
 @media screen and (min-width: 1023px){
     .banner{
         height: 45vh;
