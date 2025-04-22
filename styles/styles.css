@@ -167,7 +167,7 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 8vh;
+        margin-top: 7vh;
     }
     .container-input{
         display: flex;
@@ -181,13 +181,13 @@ footer{
         margin: 0 0 1% .3rem;
     }
     .formulario-login{
-        width: 80%;
+        max-width: 600px;
+        
     }
     #formulario { 
         border-radius: 20px;
-        padding: 30px 30px;
-        width: fit-content;
-        height: fit-content;
+        padding: 2rem;
+        max-width: 600px;
     }
     .input-ind,
     #contrasenia,
@@ -196,9 +196,8 @@ footer{
         font-size: .85rem;
     }
     #formulario{
-        position:relative;
-        width: 80%;  
-        gap: 30px;
+        position:relative; 
+        gap: 10px;
     }
     #formulario:before,
     #formulario:after{
@@ -238,6 +237,11 @@ footer{
         margin-top: 10vh;
     }
 }
+@media screen and (min-width: 767px){
+    #formulario { 
+        padding: .2rem;
+    }
+}
 @media screen and (min-width: 1023px){
     .class-font-size{
         font-size: 10px;
@@ -257,7 +261,7 @@ footer{
     }
     #formulario{
         gap: 1.5rem;
-        width: 50%;
+        max-width: 600px;
     }
     .conteiner-input{
         padding: 3px;
