@@ -121,12 +121,12 @@ body{
 
 footer{    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 40px;
+    padding: 35px;
     text-align: center;
     background-color: #030227;
     color:#50F0FA;
     width: 100%;
-    margin-top: auto;
+    margin: auto;
 }
 
 .interaccion{
@@ -134,7 +134,7 @@ footer{
     direction: row;
     justify-content: center;
     padding-top: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     border-top: solid 1px #50F0FA;
 }
 .contactanos{
@@ -163,6 +163,9 @@ footer{
     font-size: 10px;
 }
 @media screen and (min-width: 620px){
+    .banner{
+        max-height: 400px;
+    }
     .container-login{
         display: flex;
         justify-content: center;
@@ -261,14 +264,24 @@ footer{
     }
     #formulario{
         gap: 1.5rem;
-        max-width: 600px;
+        max-width: 500px;
+        max-height: 30vh;
     }
+    .btn-ini-sesion {
+        margin-top: .7rem;
+    }
+
     .conteiner-input{
         padding: 3px;
     }
     .link-login{
         display: flex;
         gap: 50px;
+    }
+    .footer-index{
+        background-color: transparent;
+        margin-top: 0;
+        padding-bottom: auto;
     }
     .interaccion{
         display: flex;
