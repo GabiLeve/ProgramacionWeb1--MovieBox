@@ -123,12 +123,14 @@ body{
 .contactanos:hover{
     text-decoration:underline;
 }
-
+.form_correo label{
+    font-size: .9rem;
+}
 footer{    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 35px;
     text-align: center;
-    background-color: #030227;
+    background-color: transparent;
     color:#50F0FA;
     width: 100%;
     margin: auto;
@@ -247,7 +249,7 @@ footer{
         }
     }
     footer{
-        margin-top: 10vh;
+       /* margin-top: 10vh;*/
     }
 }
 @media screen and (min-width: 767px){
@@ -275,7 +277,7 @@ footer{
     #formulario{
         gap: 1.5rem;
         max-width: 500px;
-        max-height: 30vh;
+        /*max-height: 30vh;*/
     }
     .btn-ini-sesion {
         margin-top: .7rem;
@@ -504,14 +506,14 @@ input:-webkit-autofill {
     .boton_registro button{
         width: 95px;
     }
-    #formulario{
+    /*#formulario{
         width: 65%;  
-    }
+    }*/
 }
 @media screen and (min-width: 769px){
     #formulario{
-        padding: 60px;
-        width: 85%;
+        padding: 40px;
+        /*width: 85%;*/
     } 
     .form_inputs{
         display: flex;
@@ -521,8 +523,7 @@ input:-webkit-autofill {
 }
 @media screen and (min-width: 1000px){
     #formulario{
-        padding: 60px;
-        width: 60%;
+        width: 40%;
     }
     .boton_registro{
         margin-top: 1rem;
@@ -560,6 +561,9 @@ input:-webkit-autofill {
     }
     #enviar_recuperar_contrasenia{
         width: 5.5rem;
+    }
+    #form_recuperar_contrasenia{
+        min-height: 200px;
     }
 }
 /* HOME */
